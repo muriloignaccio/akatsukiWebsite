@@ -1,15 +1,24 @@
+a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+a:hover{
+    color: #ba2427;
+    font-size: 16pt;
+}
 aside{
     grid-area: aside;
 }
 body{
     display: grid;
+    font-family: 'Permanent Marker', cursive;
     grid-template-areas: 
         "nav nav nav nav"
         "header header header aside"
         "section section section aside"
         "footer footer footer footer";
     grid-template-columns: 25vw 25vw 25vw 25vw;
-    grid-template-rows: 8vw 60vw 30vw 20vw;
+    grid-template-rows: 8vh 60vh 30vh 20vh;
     margin: 0;
 }
 header{
@@ -19,7 +28,14 @@ footer{
     grid-area: footer;
 }
 nav{
+    align-items: center;
+    background-color: #282a25;
+    display: flex;
     grid-area: nav;
+    justify-content: space-around;
+}
+nav > img{
+    height: 40px;
 }
 section{
     grid-area: section;
