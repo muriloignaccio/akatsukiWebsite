@@ -39,10 +39,11 @@ aside ul{
     font-family: 'Teko', sans-serif;
     font-size: 16pt;
     columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
     margin: 0 30px;
+    -moz-columns: 2;
     text-align: justify;
+    -webkit-columns: 2;
+    list-style-image: url("../images/nuvem-icon.png");
 }
 body{
     display: grid;
@@ -81,4 +82,15 @@ nav > img{
 section{
     background-color: #f5f5f5;
     grid-area: section;
+}
+section h1{
+    color: #ba2427;
+    font-family: 'Teko', sans-serif;
+    font-size: 22pt;
+    text-align: center;
+}
+section div{
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
